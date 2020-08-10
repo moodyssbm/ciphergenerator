@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="index.css"/>
+    </head>
+    <body>
+        <img src="./img/primary.png" id="hiddenImg"/>
+        <canvas id="cardCanvas"></canvas>
+        <p>
+            <input id="cost" value="4" type="number"/>
+            Cost
+        </p>
+        <p>
+            <input type="checkbox" checked id="subcostFlag"/>
+            Card includes subcost?
+        </p>
+        <p>
+            <input id="subcost" value="3" type="number"/>
+            Subcost
+        </p>
+        <p>
+            <input type="text" value="https://i.pinimg.com/736x/3b/64/cb/3b64cb49594e078d9f304436cf395ae7.jpg" id="fanart"/>
+            Fanart (675x900 px or any 3:4 ratio image)
+        </p>
+        <p>
+            <select id="clan">
+                <option value="None">None</option>
+                <option selected value="Awakening">Awakening</option>
+            </select>
+            Clan
+        </p>
+        <p>
+            <select id="sex">
+                <option value="None">None</option>
+                <option value="Male">Male</option>
+                <option selected value="Female">Female</option>
+            </select>
+            Sex
+        </p>
+        <p>
+            <select id="weapon">
+                <option selected value="Sword">Sword</option>
+                <option value="Axe">Axe</option>
+                <option value="Lance">Lance</option>
+                <option value="Tome">Tome</option>
+                <option value="Staff">Staff</option>
+            </select>
+            Weapon
+        </p>
+        <p>
+            <select id="attrOne">
+                <option selected value="None">None</option>
+                <option value="Flier">Flier</option>
+                <option value="Armored">Armored</option>
+            </select>
+            Attribute A
+        </p>
+        <p>
+            <select id="attrTwo">
+                <option selected value="None">None</option>
+                <option value="Flier">Flier</option>
+                <option value="Armored">Armored</option>
+            </select>
+            Attribute B
+        </p>
+        <p>
+            <textarea id="skillText"></textarea>
+            Skill Text
+        </p>
+        <p>
+            <input type="checkbox" id="suppFlag"/>
+            Unit has support skill?
+        </p>
+        <p>
+            <textarea id="suppText"></textarea>
+            Support Skill Text
+        </p>
+        <p>
+            <input type="text" id="atkVal" value="70"/>
+            Attack Value
+        </p>
+        <p>
+            <input type="text" id="suppVal" value="20"/>
+            Support Value
+        </p>
+        <p>
+            <input type="text" id="rng" value="1"/>
+            Range
+        </p>
+        <p>
+            <input type="text" id="className" value="Grandmaster [ADV]"/>
+            Class
+        </p>
+        <p>
+            <input type="text" id="title" value="Robin (Female)"/>
+            Title
+        </p>
+        <p>
+            <input type="text" id="subtitle" value="Legendary Tactician"/>
+            Subtitle
+        </p>
+        <p>
+            <input type="button" value="Generate" onclick="renderCard()"/>
+        </p>
+    </body>
+    <script src="./index.js"></script>
+</html>
